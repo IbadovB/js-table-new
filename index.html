@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="container" >
+            <div class="input-container">
+
+                <div class="name" id="header">
+                    <label for="name">Name</label>
+                    <input type="text" id="name-input" class="text">
+                </div>
+
+                <div class="lastname" id="header">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="lastname-input" class="text">
+                </div>
+
+                <div class="age" id="header">
+                    <label for="age">Age</label>
+                    <input type="number" id="age-input" class="text">
+                </div>
+
+                <div class="email" id="header">
+                    <label for="email">Email</label>
+                    <input type="text" id="email-input" class="text">
+                    <p class="correct-text">enter correct email</p>
+                </div>
+
+                <div class="phonenumber" id="header">
+                    <label for="name">Phonenumber</label>
+                    <input type="number" id="phonenumber-input" class="text">
+                </div>
+
+                <button class="crudops-buttons" onclick="addItem()" id="add-btn">Add</button>
+                <button class="crudops-buttons" onclick="updateData()" id="update-btn">Update</button>
+
+            </div>
+
+            <table id="operation-table">
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Phonenumber</th>
+                        <th>Edit / Delete</th>
+                   
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+
+            </table>
+
+        </div>      
+          
+        <script src="script.js"></script>
+    </body>
+</body>
+
+</html>

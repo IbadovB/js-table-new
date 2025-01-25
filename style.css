@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table th {
+    padding: 0.5em 1.5em;
+    border: 1px solid #000;
+    border-radius: 0.5px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+table td {
+    padding: 0.5em 1.5em;
+    border: 1px solid #000;
+    border-radius: 0.5px;
+    text-align: center;
+    background: orange;
+    color: #fff;
+}
+
+label,
+input {
+    padding: 0.7em 0.4em;
+    border-radius: 0.3em;
+    border: 1px solid #000;
+    text-align: center;
+    width: 12em;
+    height: 2.5em;
+}
+
+#header {
+    display: grid;
+    gap: 15px;
+    padding-top: 5em;
+}
+
+#header label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    width: 10em;
+    height: 2em;
+    border-radius: 5px;
+
+}
+
+.crudops-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    width: 12em;
+    height: 6em;
+    margin: 6em 0 0 1em;
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+#update-btn {
+    display: none;
+    background-color: green;
+}
+
+.select-button {
+    display: flex;
+    justify-content: space-around;
+    width: 10em;
+    height: 2em;
+    background: #fff;
+}
+
+#operation-table {
+    display: none;
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60em;
+    margin: 5em auto;
+    display: none;
+}
+
+
+.fa-pen,
+.fa-trash-can {
+    padding: 10px;
+    background: red;
+    border: none;
+    color: #fff;
+}
+
+.correct-text {
+    display: none;
+}
