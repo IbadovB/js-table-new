@@ -14,7 +14,8 @@ const btnUpdate = document.querySelector('#update-btn')
 
 let updateIndex;
 
-function addItem() {
+function addItem(event) {
+    event.preventDefault()
     const newItem = {
         name: userName.value.trim(),
         lastname: userLastname.value.trim(),
@@ -35,12 +36,12 @@ function addItem() {
 
     displayItems();
 
-isValid=true
+/*isValid=true
 
   if (!isValidEmail()){
 isValid=false
 document.querySelector(".corect-text").style.display ='block' 
-    }
+    } */
  
    localStorage.setItem("text", JSON.stringify(items)) 
    

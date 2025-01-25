@@ -22,8 +22,8 @@
     </head>
 
     <body>
-        <div class="container" >
-            <div class="input-container">
+ 
+            <form   action="#"  onsubmit="addItem(event)" class="input-container">
 
                 <div class="name" id="header">
                     <label for="name">Name</label>
@@ -42,7 +42,7 @@
 
                 <div class="email" id="header">
                     <label for="email">Email</label>
-                    <input type="text" id="email-input" class="text">
+                    <input type="email" id="email-input" class="text">
                     <p class="correct-text">enter correct email</p>
                 </div>
 
@@ -54,7 +54,7 @@
                 <button class="crudops-buttons" onclick="addItem()" id="add-btn">Add</button>
                 <button class="crudops-buttons" onclick="updateData()" id="update-btn">Update</button>
 
-            </div>
+            </form>
 
             <table id="operation-table">
                 <thead>
@@ -75,7 +75,7 @@
 
             </table>
 
-        </div>      
+     
           
         <script src="script.js"></script>
     </body>
