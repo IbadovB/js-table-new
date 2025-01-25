@@ -36,21 +36,11 @@ function addItem(event) {
 
     displayItems();
 
-/*isValid=true
 
-  if (!isValidEmail()){
-isValid=false
-document.querySelector(".corect-text").style.display ='block' 
-    } */
- 
    localStorage.setItem("text", JSON.stringify(items)) 
    
 }
 
-function isValidEmail() {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex
-   }
 
 function displayItems() {
     const itemList = document.querySelector('#table-body')
@@ -58,8 +48,7 @@ function displayItems() {
     if (items.length > 0) {
         dataTbl.style.display = "table"
     }
-    // items = localStorage.getItem("index") ? JSON.parse(localStorage.getItem("index")) : []
-
+    
     items.forEach((item, index) => {
         const row = itemList.insertRow()
         const cell1 = row.insertCell(0)
